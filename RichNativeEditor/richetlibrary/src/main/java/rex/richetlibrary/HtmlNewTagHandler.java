@@ -1,15 +1,15 @@
-package rex.editor;
+package rex.richetlibrary;
 
 import android.app.Activity;
+import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.text.Editable;
 import android.text.Html;
 import android.text.Spannable;
 import android.text.style.ImageSpan;
+import android.util.DisplayMetrics;
+import android.view.WindowManager;
 import android.widget.Toast;
-
-
-import org.xml.sax.Attributes;
 import org.xml.sax.XMLReader;
 
 import java.lang.reflect.Field;
@@ -51,10 +51,18 @@ public class HtmlNewTagHandler implements Html.TagHandler {
         }
     }
 
+    public int getScreenWidth(Context context) {
+        WindowManager wm = (WindowManager) context
+                .getSystemService(Context.WINDOW_SERVICE);
+        DisplayMetrics outMetrics = new DisplayMetrics();
+        wm.getDefaultDisplay().getMetrics(outMetrics);
+        return outMetrics.widthPixels;
+    }
+
     public void startHttpImg(Editable text) {
         String src = attributes.get("src");
         String url = src;
-        int screenWidth = ScreenUtil.getScreenWidth() / 2;//占屏幕一半 根据需求调整
+        int screenWidth = getScreenWidth(mContext) / 2;//占屏幕一半 根据需求调整
 
         Drawable d = httpDraws.get(url);
         if (d == null) {

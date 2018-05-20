@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RichNativeEditor.iml" filepath="$PROJECT_DIR$/RichNativeEditor.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/richetlibrary/richetlibrary.iml" filepath="$PROJECT_DIR$/richetlibrary/richetlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/richnativeeditorlibrary/richnativeeditorlibrary.iml" filepath="$PROJECT_DIR$/richnativeeditorlibrary/richnativeeditorlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/richnativeeditorlibrary/richnativeeditorlibrary.iml" filepath="$PROJECT_DIR$/richnativeeditorlibrary/richnativeeditorlibrary.iml" />
     </modules>
   </component>
 </project>
