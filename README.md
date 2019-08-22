@@ -1,3 +1,7 @@
+#该原生实现思路因为远远不如新方案 故此项目已废弃
+请移步
+https://github.com/RexSuper/RichEditor
+
 # RichNativeEditor
 Rich text editor implemented entirely with native code
 
